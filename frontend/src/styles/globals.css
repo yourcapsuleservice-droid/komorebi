@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global app styles */
+:root {
+  --app-bg: #FDFBF7;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    background: var(--app-bg);
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Helper to hide default scrollbar for some areas */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
